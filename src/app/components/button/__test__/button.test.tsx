@@ -1,5 +1,5 @@
 import { fireEvent, render } from '@testing-library/react'
-import Button from '../page'
+import { Button } from '../page'
 
 const mockProduct = {
   id: 1,
