@@ -3,7 +3,7 @@ import Cart from '../cart/page'
 import Link from 'next/link'
 import SideBar from '../sidebar/page'
 
-export default function Header() {
+export function Header() {
   return (
     <Container>
       <Link href="/">

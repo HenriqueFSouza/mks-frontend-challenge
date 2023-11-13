@@ -16,11 +16,8 @@ import {
 } from '../styles'
 import { useCart } from '@/contexts/cart-context'
 import { formatPrice } from '@/app/utils/formatPrice'
-type ProductProps = {
-  product: ProductType
-}
 
-export default function CartItem({ product }: ProductProps) {
+export default function CartItem({ product }: { product: ProductType }) {
   const { removeProduct, decreaseProduct, addProduct } = useCart()
   return (
     <ItemContainer>

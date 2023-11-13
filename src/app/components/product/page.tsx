@@ -11,10 +11,10 @@ import {
   ProductDescription,
   ProductImage,
 } from './styles'
-import { Button } from '../button/page'
+import Button from '../button/page'
 import { ProductType } from '@/types/product'
 import { useQuery } from '@tanstack/react-query'
-import Skeleton from '../skeleton/page'
+import { Skeleton } from '../skeleton/page'
 import { formatPrice } from '@/app/utils/formatPrice'
 
 // async function getProducts(): Promise<ProductType[]> {

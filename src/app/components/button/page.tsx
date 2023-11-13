@@ -4,12 +4,13 @@ import { ProductType } from '@/types/product'
 import { Icon, StyledButton } from './styles'
 import { useCart } from '@/contexts/cart-context'
 
-type ButtonProps = {
+export default function Button({
+  label,
+  product,
+}: {
   label: string
-  isFinishButton?: boolean
   product: ProductType
-}
-export function Button({ label, product }: ButtonProps) {
+}) {
   const { addProduct } = useCart()
 
   return (
