@@ -11,31 +11,31 @@ export const Container = styled.div<Props>`
   justify-content: space-between;
   width: 486px;
   height: 100%;
-  background: #0F52BA;
+  background: #0f52ba;
   box-shadow: -5px 0px 6px 0px rgba(0, 0, 0, 0.13);
   position: fixed;
   top: 0;
   right: 0;
-  right: ${({ open }) => open ? '0' : '-100%'};
+  right: ${({ open }) => (open ? '0' : '-100%')};
   transition: ease-in-out 0.5s;
 `
 
 export const CartWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background: #0F52BA;
+  background: #0f52ba;
   padding: 30px 22px 40px 45px;
 `
 
 export const HeaderWrapper = styled.div`
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
 `
 
 export const CartTitle = styled.h1`
-  color: #FFF;
+  color: #fff;
   font-size: 27px;
   font-weight: 700;
 `
@@ -46,16 +46,16 @@ export const CloseIcon = styled.div<Props>`
   justify-content: center;
   border-radius: 50%;
   background: #000;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
-  width: ${({ small }) => small ? '18px' : '38px'};
-  height: ${({ small }) => small ? '18px' : '38px'};
-  font-size: ${({ small }) => small ? '14px' : '20px'};
+  width: ${({ small }) => (small ? '18px' : '38px')};
+  height: ${({ small }) => (small ? '18px' : '38px')};
+  font-size: ${({ small }) => (small ? '14px' : '20px')};
   font-weight: 400;
-  line-height: 15px; 
-  position: ${({ small }) => small ? 'absolute' : 'relative'};
-  top: ${({ small }) => small ? '-5px' : '0'};
-  right: ${({ small }) => small ? '-5px' : '0'};
+  line-height: 15px;
+  position: ${({ small }) => (small ? 'absolute' : 'relative')};
+  top: ${({ small }) => (small ? '-5px' : '0')};
+  right: ${({ small }) => (small ? '-5px' : '0')};
 `
 export const Box = styled.div`
   display: flex;
@@ -64,10 +64,10 @@ export const Box = styled.div`
   align-items: center;
 `
 export const TotalValue = styled.p`
-  color: #FFF;
+  color: #fff;
   font-size: 28px;
   font-weight: 700;
-  line-height: 15px; 
+  line-height: 15px;
 `
 
 export const ItemsContainer = styled.div`
@@ -83,7 +83,7 @@ export const ItemContainer = styled.div`
   max-width: 379px;
   height: 95px;
   border-radius: 8px;
-  background: #FFF;
+  background: #fff;
   box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.05);
   position: relative;
 `
@@ -94,10 +94,10 @@ export const ItemImage = styled(Image)`
 `
 
 export const ItemName = styled.p`
- color: #2C2C2C;
+  color: #2c2c2c;
   font-size: 13px;
   font-weight: 400;
-  line-height: 17px; 
+  line-height: 17px;
   max-width: 120px;
 `
 
@@ -117,8 +117,8 @@ export const QtyButtonsWrapper = styled.div`
   width: 70px;
   height: 25px;
   border-radius: 4px;
-  border: 0.3px solid #BFBFBF;
-  background: #FFF;
+  border: 0.3px solid #bfbfbf;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,8 +143,8 @@ export const QtyValue = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-left: 0.5px solid #BFBFBF;
-  border-right: 0.5px solid #BFBFBF;
+  border-left: 0.5px solid #bfbfbf;
+  border-right: 0.5px solid #bfbfbf;
 `
 export const ItemPrice = styled.p`
   color: #000;
@@ -167,6 +167,6 @@ export const FinishButton = styled.button`
   background: #000;
   height: 80px;
   font-size: 28px;
-  font-weight:600;
+  font-weight: 600;
   line-height: 15px;
 `

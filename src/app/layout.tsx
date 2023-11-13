@@ -20,9 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <Provider>
-          <StyledComponentsRegistry>
-            {children}
-          </StyledComponentsRegistry>
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         </Provider>
       </body>
     </html>

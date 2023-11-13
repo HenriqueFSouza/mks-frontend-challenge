@@ -1,7 +1,7 @@
 'use client'
 
-import { ProductType } from "@/types/product"
-import { createContext, useContext, useState } from "react"
+import { ProductType } from '@/types/product'
+import { createContext, useContext, useState } from 'react'
 
 export interface CartContextProps {
   open: boolean
@@ -68,7 +68,17 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <CartContext.Provider value={{ open, cartItems, openSidebar, closeSidebar, addProduct, removeProduct, decreaseProduct }}>
+    <CartContext.Provider
+      value={{
+        open,
+        cartItems,
+        openSidebar,
+        closeSidebar,
+        addProduct,
+        removeProduct,
+        decreaseProduct,
+      }}
+    >
       {children}
     </CartContext.Provider>
   )

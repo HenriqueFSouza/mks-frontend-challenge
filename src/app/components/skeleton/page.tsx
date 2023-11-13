@@ -1,7 +1,5 @@
-import { Container } from "./styles";
+import { Container } from './styles'
 
 export function Skeleton() {
-  return (
-    <Container data-testid="skeleton" />
-  )
+  return <Container data-testid="skeleton" />
 }

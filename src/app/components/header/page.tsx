@@ -1,15 +1,15 @@
-import { Container, LogoImage } from "./styles";
-import Cart from "../cart/page"
-import Link from "next/link";
-import { SideBar } from "../sidebar/page";
+import { Container, LogoImage } from './styles'
+import Cart from '../cart/page'
+import Link from 'next/link'
+import { SideBar } from '../sidebar/page'
 
 export function Header() {
   return (
     <Container>
-      <Link href='/'>
+      <Link href="/">
         <LogoImage
-          src='/logo.png'
-          alt='logo'
+          src="/logo.png"
+          alt="logo"
           width={200}
           height={200}
           quality={100}

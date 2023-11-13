@@ -1,15 +1,14 @@
 'use client'
 import styled from 'styled-components'
 
-
 export const Wrapper = styled.div`
   min-height: 100vh;
   width: 100%;
-  background: #FFF;
+  background: #fff;
 `
 
 export const Container = styled.div`
-  background: #FFF;
+  background: #fff;
   min-height: calc(100vh - 90px);
   display: grid;
   justify-items: center;

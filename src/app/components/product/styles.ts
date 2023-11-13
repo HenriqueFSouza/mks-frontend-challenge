@@ -16,10 +16,10 @@ export const DetailsWrapper = styled.div`
   align-items: center;
   gap: 14px;
   padding: 15px;
-  background: #FFF;
+  background: #fff;
 `
 export const ProductImage = styled(Image)`
-  &:hover { 
+  &:hover {
     transform: scale(1.05);
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -27,10 +27,10 @@ export const ProductImage = styled(Image)`
   }
 `
 export const PorductTitle = styled.h1`
-  color: #2C2C2C;
+  color: #2c2c2c;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px; 
+  line-height: 19px;
 `
 
 export const Box = styled.div`
@@ -51,10 +51,10 @@ export const PriceWrapper = styled.div`
 `
 
 export const Price = styled.p`
-  color: #FFF;
+  color: #fff;
   font-size: 15px;
   font-weight: 700;
-  line-height: 15px; 
+  line-height: 15px;
 `
 export const DescriptionWrapper = styled.div`
   height: 40px;
@@ -62,10 +62,10 @@ export const DescriptionWrapper = styled.div`
   // add ellipsis to the text
   overflow: hidden;
   text-overflow: ellipsis;
-  `
+`
 export const ProductDescription = styled.p`
-  color: #2C2C2C;
+  color: #2c2c2c;
   font-size: 10px;
   font-weight: 300;
-  line-height: 12px; 
+  line-height: 12px;
 `

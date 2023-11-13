@@ -1,9 +1,5 @@
 'use client'
 
-type ButtonProps = {
-  isFinishButton?: boolean
-}
-
 import Image from 'next/image'
 import styled from 'styled-components'
 
@@ -18,7 +14,7 @@ export const StyledButton = styled.button`
   outline: none;
   cursor: pointer;
   transition: 0.3s;
-  background:#0F52BA;
+  background: #0f52ba;
   height: 30px;
   border-radius: 0px 0px 8px 8px;
   font-size: 14px;

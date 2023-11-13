@@ -15,14 +15,14 @@ export const Container = styled.button`
   justify-content: space-around;
   transition: 0.2s;
 
-  &:hover { 
+  &:hover {
     filter: brightness(0.9);
   }
 `
 
 export const Text = styled.p`
   color: #000;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
