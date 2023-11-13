@@ -1,7 +1,7 @@
 import { Container, LogoImage } from './styles'
 import Cart from '../cart/page'
 import Link from 'next/link'
-import SideBar from '../sidebar/page'
+import SideBar from '../sidebar'
 
 export function Header() {
   return (

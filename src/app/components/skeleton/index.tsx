@@ -1,5 +1,5 @@
 import { Container } from './styles'
 
-export function Skeleton() {
+export default function Skeleton() {
   return <Container data-testid="skeleton" />
 }

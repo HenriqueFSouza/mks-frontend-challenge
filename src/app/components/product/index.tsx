@@ -5,25 +5,24 @@ import {
   Box,
   Container,
   DetailsWrapper,
+  Icon,
   PorductTitle,
   Price,
   PriceWrapper,
   ProductDescription,
   ProductImage,
+  StyledButton,
 } from './styles'
-import Button from '../button/page'
 import { ProductType } from '@/types/product'
 import { useQuery } from '@tanstack/react-query'
-import { Skeleton } from '../skeleton/page'
+import Skeleton from '../skeleton'
 import { formatPrice } from '@/app/utils/formatPrice'
+import { useCart } from '@/contexts/cart-context'
 
-// async function getProducts(): Promise<ProductType[]> {
-//   const { products } = await fetch(process.env.NEXT_PUBLIC_API_URL + `/products?page=1&rows=8&sortBy=id&orderBy=DESC`)
-//     .then((res) => res.json()) as { products: ProductType[] }
-//   return products
-// }
 
 export default function Product() {
+  const { addProduct } = useCart()
+
   const { data, isLoading, error } = useQuery({
     queryKey: ['products'],
     queryFn: async () => {
@@ -81,7 +80,15 @@ export default function Product() {
             </ProductDescription>
           </DetailsWrapper>
 
-          <Button label="COMPRAR" product={product} />
+          <StyledButton onClick={() => addProduct(product)}>
+            <Icon
+              src="/shopping-bag.svg"
+              alt="icone-compra"
+              width={100}
+              height={100}
+            />
+            COMPRAR
+          </StyledButton>
         </Container>
       ))}
     </>

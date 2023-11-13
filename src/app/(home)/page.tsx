@@ -1,4 +1,4 @@
-import Product from '../components/product/page'
+import Product from '../components/product'
 import { Container, ProductsContainer } from './styles'
 
 export default function Home() {

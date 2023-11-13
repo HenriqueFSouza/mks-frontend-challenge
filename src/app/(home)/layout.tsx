@@ -1,6 +1,6 @@
 import { CartProvider } from '@/contexts/cart-context'
 import { Wrapper } from './styles'
-import { Header } from '../components/header/page'
+import { Header } from '../components/header/header'
 
 export default function HomeLayout({
   children,

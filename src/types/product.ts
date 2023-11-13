@@ -9,7 +9,3 @@ export interface ProductType {
   updatedAt: string
   createdAt: string
 }
-
-export interface ProductsResponseType {
-  products: ProductType[]
-}

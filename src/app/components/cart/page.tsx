@@ -10,7 +10,7 @@ export default function Cart() {
   return (
     <Container onClick={openSidebar}>
       <Image src="/cart.svg" alt="icone-carrinho" width={20} height={20} />
-      <Text>{cartItems.length}</Text>
+      <Text>{cartItems?.length ?? 0}</Text>
     </Container>
   )
 }
