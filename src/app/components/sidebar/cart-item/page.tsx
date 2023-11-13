@@ -20,7 +20,7 @@ type ProductProps = {
   product: ProductType
 }
 
-export function CartItem({ product }: ProductProps) {
+export default function CartItem({ product }: ProductProps) {
   const { removeProduct, decreaseProduct, addProduct } = useCart()
   return (
     <ItemContainer>

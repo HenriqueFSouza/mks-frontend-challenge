@@ -1,6 +1,6 @@
 /* eslint-disable testing-library/prefer-screen-queries */
 import { render } from '@testing-library/react'
-import { SideBar } from '../page'
+import SideBar from '../page'
 
 describe('Sidebar', () => {
   it('should render the cart sidebar with the correct title and close button', () => {

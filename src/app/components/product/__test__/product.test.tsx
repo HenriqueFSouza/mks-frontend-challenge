@@ -1,6 +1,6 @@
 /* eslint-disable testing-library/no-wait-for-multiple-assertions */
 import { render, screen, waitFor } from '@testing-library/react'
-import { Product } from '../page'
+import Product from '../page'
 import Providers from '@/app/utils/react-query-provider'
 
 describe('Product', () => {

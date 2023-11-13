@@ -9,7 +9,7 @@ type ButtonProps = {
   isFinishButton?: boolean
   product: ProductType
 }
-export function Button({ label, product }: ButtonProps) {
+export default function Button({ label, product }: ButtonProps) {
   const { addProduct } = useCart()
 
   return (

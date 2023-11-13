@@ -1,7 +1,7 @@
 'use client'
 
 import { useCart } from '@/contexts/cart-context'
-import { CartItem } from './cart-item/page'
+import CartItem from './cart-item/page'
 import {
   CartTitle,
   CartWrapper,
@@ -12,7 +12,7 @@ import {
   ItemsContainer,
 } from './styles'
 
-export function SideBar() {
+export default function SideBar() {
   const { open, cartItems, closeSidebar } = useCart()
 
   return (

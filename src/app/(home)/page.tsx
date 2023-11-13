@@ -1,4 +1,4 @@
-import { Product } from '../components/product/page'
+import Product from '../components/product/page'
 import { Container, ProductsContainer } from './styles'
 
 export default async function Home() {

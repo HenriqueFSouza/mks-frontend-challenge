@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import { CartItem } from '../page'
+import CartItem from '../page'
 import '@testing-library/jest-dom'
 
 const mockProduct = {
