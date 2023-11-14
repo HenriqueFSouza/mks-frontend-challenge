@@ -78,7 +78,9 @@ export default function SideBar() {
                   </QtyButtonsWrapper>
                 </QtyWrapper>
 
-                <ItemPrice>{formatPrice(product.price)}</ItemPrice>
+                <ItemPrice>
+                  {formatPrice(product.price, product.quantity)}
+                </ItemPrice>
               </ItemContainer>
             ))}
         </ItemsContainer>
